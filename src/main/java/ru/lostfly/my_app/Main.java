@@ -4,8 +4,10 @@ import org.apache.commons.lang3.StringUtils;
 import ru.lostfly.my_app.animals.AnimalExample;
 import ru.lostfly.my_app.animals.Cat;
 import ru.lostfly.my_app.animals.Dog;
+import ru.lostfly.my_app.animals.Parrot;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Set;
 
 public class Main {
@@ -17,7 +19,9 @@ public class Main {
 
         Dog dogSmall = new Dog("dog1");
 
-        Set<AnimalExample> animals = Set.of(catBig, dogSmall);
+        Parrot parrot = new Parrot("1");
+
+        List<AnimalExample> animals = List.of(catBig, dogSmall, parrot);
 
         animals.forEach(animal -> System.out.println(animal.animalType()));
 
